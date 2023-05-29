@@ -1,0 +1,9 @@
+    IAM permisison boundry
+    IAM permission boundary allows to set maximum permission for the IAM 
+    permission boundaries can be applied to users and roles
+
+priviledge escalation
+    if user A has full IAM access so. user A might create a user with full administrator access. and using that administrator access user A might launch an ec2 instance or aws batch to mine some bitcoin
+    in this case. most of the aws resources will be used and could get higher cost for unwanted aws resources access.
+
+    in this scenario, user A should not be able to launch the resources. so here we can define the permission boundary for user or group so that they can be getting similar permissions or fewer permissions.
