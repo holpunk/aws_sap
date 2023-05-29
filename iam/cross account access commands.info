@@ -1,0 +1,34 @@
+aws iam create-user -name akki
+
+aws iam create-policy --policy-name _of_policy --policy-document file://akki-s3-json
+
+aws iam attach-user-policy --user-name akki --policy-arn "arn:aws:iam::account_A_ID:policy/name_of_policy"
+
+aws iam list-attached-user-policies --user-name akki
+
+aws iam create-access-key --user-name akki
+
+aws configure --profile akki
+
+aws sts get-caller-identity
+
+aws sts assume-role --profile akki--role-arn "arn of account b s3 access" --role-session-name AWSCLI_Session --external-id id_number
+
+export AWS_ACCESS_KEY_ID=ROLEACCESSKEYID
+
+export AWS_SECRET_ACCESS_KEY=ROLESECRETACCESSKEY
+
+export AWS_SESSION_TOKEN=ROLESESSIONTOKEN
+
+aws sts get-called-identity
+
+aws s3 list
+
+aws s3 mb s3://test-create-bucket-account-b-id
+
+aws s3 rb s3://test-create-bucket-account-b-id
+
+unset ROLEACCESSKEYID ROLESECRETACCESSKEY ROLESESSIONTOKEN
+
+aws sts get-caller-identity
+

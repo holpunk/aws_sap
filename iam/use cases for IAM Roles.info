@@ -14,3 +14,10 @@ use cases
             Account b
                 identity based policy
                     allow the user to assume the role iin account A
+
+
+cross account access from 3rd party
+
+
+delegation of access
+    
