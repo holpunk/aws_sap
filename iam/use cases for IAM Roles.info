@@ -1,0 +1,16 @@
+use cases
+
+
+    cross account access
+        
+        cross account access
+
+            Account a
+                role 
+                    trust policy
+                        allow the user from account b to assume the role
+                    permission policy
+                        allows role to access the bucket
+            Account b
+                identity based policy
+                    allow the user to assume the role iin account A
