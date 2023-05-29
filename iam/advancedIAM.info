@@ -1,0 +1,63 @@
+IAM conditions
+    awssourceIP
+        restrict the access to the client IP from which api calls are made.
+        use case
+            only your company ip address can access the AWS account and resources
+            denies the access from the external users making it prefer to be used by the company employees.″
+    awsrequestedRegion
+        restrict the region the api calls are made to
+        we can write an policy to restrict access on specific aws resources from specific region.
+        these policy can be made to provide the government guideline based on the region.
+        weather region1 follows some guidelines. weather region 2 might follow the guideline that might contradict to the region1
+    ec2ResourceTag
+        restrict the access based on tags
+        if there are resources and their names starts with the specific pattern name then we can allow or restrict access based on the names
+        it gives more granular restriction based on the correct names
+
+
+IAM for S3
+    bucket level permissions
+        permission applies to whole bucket
+    object level permissions
+        object stored in bucket
+        putting, reading and deleting the objects from the bucket
+
+        policy can be made to restrict and allow access to the different resources in aws. we need to make sure which resource has to be accessed by which other resources and how it should respond while in the certain situation
+
+IAM roles vs resource based policies
+
+    cross account
+        how to access s3 in different account
+        attaching a resource based policy to resource
+        or using a role as a proxy
+
+        role
+            when you assume a role, you give up your original permissions and take the permissions  assigned to the role
+        resource based policy
+            when using resource based policy the principal does not have to give up his permissions
+
+        different case for EventBridge
+
+from exam perspective
+
+    resource based policy
+        lambda
+        SNA
+        SQS
+        Cloudwatch Logs
+        API gateway
+
+    IAM Role / identity based policy
+        Kinesis Stream
+        System manager run command
+        ECS Task
+
+
+IAM policy evaluation logic
+    even thought you give a administrator access to the  user but if we provide a permission boundary to the user. then it wont allow the user to access other resources.
+
+    use cases
+        delegate responsibilities to non administrator within their permission boundaries for example create  new IAM users
+        allow developers to self assign policies and manage their own permissions. while making sure that they cant escalate their privileges
+        useful to restrict one specific user instead of whole account using organizations and scp
+

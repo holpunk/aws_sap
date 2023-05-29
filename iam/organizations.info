@@ -1,0 +1,42 @@
+AWS organizations
+    global service
+    allows you to manage multiple aws accounts
+    the main account is management account
+    the other accounts are member accounts
+    member accounts can be a part of one organization
+    consolidated billing across all accounts - single payment method and single billing for many accounts under one organization
+    shared reserved instances and savings plans discounts across accounts
+    APi is available to automate aws account creation
+
+Main experimental unit
+    root account
+        create a sub organizational unit
+        member account is the part of the sub organizational unit
+        For instance
+            sub ou for dev 
+            sub ou for prod
+                for getting a more specific 
+                    creating a sub ou in prod for HR and finance
+                    creating a consolidated billing for all of HR within a prod OU
+                    getting a more control on the account level for the specific branch and specific unit
+            sub ou for preprod 
+                creating a consolidated billing for all of the member account of the sub ou of the preprod (applies to all sub OU)
+
+real time example 
+    organize it using the business units
+
+    sales
+        sales account 1
+        sales account 2
+        sales account 3
+    finance
+        finance account 1
+        finance account 2
+        finance account 3
+    retails
+        retails account 1
+        retails account 2
+        retails account 3
+
+regarding the access from the bottom ou to the root ou we need following hierarchy to follow for the inherited access and rights from root OU to child OU
+

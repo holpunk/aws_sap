@@ -1,0 +1,35 @@
+role based access control
+    provides a least priviledges to a group so user inherits the priviledges from group
+    providing a policy and attach it to the group
+    Different role requires different service access
+        to make differentiation and giving least possible priviledges to users we go with RBac
+            group a
+                adming group having administrator access
+            group b
+                b (developer) group has developer related permissions
+            group c
+                operations team has operation related services so that deployment of resources using terraform and cloudformation
+
+AWS managed role based policies
+    job function policies 
+        administrator
+        billing
+            if job function requires the billing relatd permissions then role based policies can be created to provide all the billing related persmissions to role in order to perform the billing related activities
+        database administratordata scientist
+        developer power user
+        network administrator
+        security auditor
+        support user
+        system administrator
+        view only user 
+
+in this way. a certain group only gets a specific permissions and thats why we perform least privileges principle
+
+Attribute based access control
+    using Tags for giving permissons
+    tags are way of allocating a metadata to resource
+    in policies the consiftions are made on basis of the tags
+        lets say
+            if tag department matches on user group
+            if tag environment matches on resource bucket group 
+                then permission is grated and in effect
