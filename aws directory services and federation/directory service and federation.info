@@ -1,0 +1,8 @@
+aws directory service
+    aws managed active directory    
+        managed implmentataion of microsoft active directory and it runs under the windows server 2012
+
+        vpc with mulitple subnets
+        each subnet is having managed active directory
+            which is HA pair of windows 2012 server domain controllers
+        
