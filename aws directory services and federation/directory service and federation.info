@@ -5,4 +5,4 @@ aws directory service
         vpc with mulitple subnets
         each subnet is having managed active directory
             which is HA pair of windows 2012 server domain controllers
-        
+            use these active directory for adding users computers
