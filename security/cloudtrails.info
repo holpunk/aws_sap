@@ -1,0 +1,5 @@
+Cloudtrails
+    events
+        management
+            operations that are performed on resources in your aws account
+        
