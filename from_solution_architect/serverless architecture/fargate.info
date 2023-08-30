@@ -1,0 +1,18 @@
+Fargate
+
+    choice where the short running tasks are preferable.
+    isolated environment
+    no operating system access
+    pay based on resources allocated and time ran
+
+
+fargate vs lambda
+
+    select fargate when you have more consistent workloads
+    allows docker to user across the oraganization and a greater level of control by developers
+
+
+lambda is perfect for the applications that can be expressed as a single function
+where as fargate can consistets of multiple tasks that can be standardize the way of calling it.
+batch processing which is needed once in a while. but consisting multiple places to be called, processed.
+fargate doesnot has the time limit
