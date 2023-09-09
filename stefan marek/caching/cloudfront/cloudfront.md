@@ -7,7 +7,8 @@ Cloudfront
     supports websocket protocol
 
     use case:
-        we have website deployed to s3 bucket and we want to make it visible to all over the world. cloudfront can deliver our content through the secure communication between it and  http backedn.
+        we have website deployed to s3 bucket and we want to make it visible to all o
+        ver the world. cloudfront can deliver our content through the secure communication between it and  http backedn.
 
 
     origins
@@ -24,6 +25,14 @@ Cloudfront
             to deliver video on demand, or live streaming services using aws media services
 
 
+origin groups
+  to provide high availability and do failover
+  origin group = one primary and one secondary origin
+  if primary fails and secondary can be used
+  cross region high availability
+
+  with s3 we can setup replication. so that primary origin and second origin can be synchrnized and in case of f
+  ailure of one of the origin requests can be sent to the other available origin
 
 
 
