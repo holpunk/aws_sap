@@ -42,3 +42,12 @@ cloudfront customization at the edge
             A/B testing
             bot mitigation at the edge
 
+you dont have to manage servers for lambda edege and edge functions
+
+
+cloudfron functions
+    lightweight functions written in javascript
+    for high scale, latency sensetive CDN customizations
+    sub ms start up times. millions of requests/second
+
+    
