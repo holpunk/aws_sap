@@ -30,7 +30,12 @@ aws direct connect DX
         weeks to months for the setting up
         and there we set up physical fibre connection to aws running at 1 GBPS and 10GBPS connection speed
 
-
-
         Benefits
             private connectivity between aws and your data center / office.
+
+
+Private VIF
+    connects to a single vpc in the same aws region using VGW
+
+public vif
+    can be used to connect to aws services in any region but not using public internet  f
