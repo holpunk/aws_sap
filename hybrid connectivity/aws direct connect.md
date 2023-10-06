@@ -38,4 +38,4 @@ Private VIF
     connects to a single vpc in the same aws region using VGW
 
 public vif
-    can be used to connect to aws services in any region but not using public internet  f
+    can be used to connect to aws services in any region but not using public internet  fgit 
