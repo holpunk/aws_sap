@@ -2,7 +2,7 @@
 
 1. e-commerce application
     components
-        ecs tasks with ALB and data stored in dynamodb
+        ecs tasks with ALB and       data stored in dynamodb
 
     problems
         sudden attacks, shutdowns,
@@ -21,4 +21,9 @@
     solutions
         DAX cluster wit correct number and type of nodes. tune the item and query cache configurations for an optimal user experience.
         enable dynamodb auto scaling to manage the throughput capacity as traffic increases. set the upper and lower limits to control costs and target utilization based on the usage
-3.
+
+3. company includes a several business units that each use a seperate AWS account and parent company AWS account. The company requires single aws bills across all aws accounts with cost brocken for each business units the company aso requires
+    that services and features be restricted in the business units accounts and this must be govern centrally.
+
+    solution
+        use consolidated billing optiion
