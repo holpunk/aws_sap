@@ -1,0 +1,24 @@
+## Exam 1
+
+1. e-commerce application
+    components
+        ecs tasks with ALB and data stored in dynamodb
+
+    problems
+        sudden attacks, shutdowns,
+    requirements
+        prevent attacks which can cause application shutdowns. 
+        search for possible combinations
+    solutions
+        AWS WAF web acl that includes a rule group that blocks attacks traffic. Associates the Web ACL with amazon cloudfront distributions
+        configure cloudfront distributions with ALB as the origin and configure custom header and secret value. configure ALB to conditionally forward traffic only if the header and value matches.
+
+2. dynamodb and user base has increased. poor response time. and application uses dynamodb in read only mode.  the operations team has determined issue is provisionedthroughputexceededexception in the applications logs doing scan and read operations.
+    problems
+        poor response time. 
+    requirements
+        improve application performance and minimizing changes to the applications.
+    solutions
+        DAX cluster wit correct number and type of nodes. tune the item and query cache configurations for an optimal user experience.
+        enable dynamodb auto scaling to manage the throughput capacity as traffic increases. set the upper and lower limits to control costs and target utilization based on the usage
+3.
