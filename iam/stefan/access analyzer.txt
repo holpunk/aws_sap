@@ -1,0 +1,12 @@
+Access analyzer
+
+1. find out which resources are shared externally
+    s3
+    iam roles
+    kms keys
+    lambda function and layers
+    sqs queues
+    secreats manager
+
+    define zone of trust. aws account or organization
+    access outside of zone of trust = findings
