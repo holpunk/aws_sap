@@ -1,19 +1,18 @@
-identity federation
+**** identity federation ****
 1. give users which are outside of aws permissions to access aws resources in your account.
 2. you dont need to create IAM users (user management is outside of aws)
 3. use cases:
     A corporate has its own identiy system. Active Directory
     web/ mobile application that needs access to aws resources.
 
-flavours
+**** flavours ****
 SAML 2.0
 custom identity broker
 web identity federation with Amazon cognito
 Single Sign On
 
 
-
-SAML 2.0
+**** SAML 2.0 ****
 1. security assertion markup language 2.0
 2. open standard used by many identity providers.
     supports integration with microsoft active directory services
@@ -21,3 +20,16 @@ SAML 2.0
 Access to aws console. aws cli, aws api using temporary credentials.
 under the hood. uses the STS Api AssumeRoleWithSAML
 SAML 2.0 federation is the old way. Amazon single sign-on federation is the new managed and simpler way
+
+
+**** ADFS ****
+ similar to SAML and changes to the identity provider to the Microsoft active directory
+
+****** Web Identity federation ******
+without cognito
+
+not recommended by AWS
+- use cognito
+
+here we have 3rd party identity providers.
+google, amazon, faceook or openId connect compatible IDP
