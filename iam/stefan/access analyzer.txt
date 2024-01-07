@@ -10,3 +10,7 @@ Access analyzer
 
     define zone of trust. aws account or organization
     access outside of zone of trust = findings
+
+    Policy validation
+        validate your policies against. IAM policy grammer and best practices.
+        

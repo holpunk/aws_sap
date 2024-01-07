@@ -1,0 +1,16 @@
+api Actions with STS.
+
+AssumeRole:
+    Allows you to assume a role to obtain temporary security credentials.
+AssumeRoleWithSAML:
+    Allows you to assume a role using a SAML authentication response.
+AssumeRoleWithWebIdentity:
+    Allows you to assume a role using a web identity federation token.
+DecodeAuthorizationMessage:
+    Decodes additional information about the authorization status of a request from an encoded message returned in response to an AWS request.
+GetCallerIdentity:
+    Returns details about the IAM identity whose credentials are used to call the API.
+GetFederationToken:
+    Returns a set of temporary security credentials for a federated user.
+GetSessionToken:
+    Returns a set of temporary security credentials for an AWS account or IAM user.
