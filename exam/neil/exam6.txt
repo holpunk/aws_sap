@@ -1,2 +1,0 @@
-question:
-    company uses aws codecommit for source control and aws codepipeline for continuous integration. the pipeline has build stage which uses s3 bucket for artifacts. the company requires a new developement 
