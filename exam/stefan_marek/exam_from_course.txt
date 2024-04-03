@@ -1,0 +1,29 @@
+questions
+
+
+1. large number of aws accounts owned by seperate business GROUPS
+    one of the account is recently compromised.
+    attacked launched a large number of ec2 instances and resulting a high number of bill
+
+    security breach has been addressed management asked solution architect to develope a solution to prevent a excessive spending in all accounts. each business group wants to retain full control of its accounts
+    
+    which soluton ?
+
+answer:
+    enable billing alerts on each aws account. create amazon cloudwatch alarms that sends sns notification to the account administrator. whenever the account exceeds the spending budgets.
+
+2. company has multiple aws accoutns the company integrated its on prem AD with AWS SSO to grant the AD users at least abilities to manage infrastructure across all the accounts.
+    solution architect must integrate 3rd party monitoring solution that requires read-only access across all aws accounts. monitoring solution will run its own aws account.
+    how can monitoring solution be given the required permissions?
+
+answer:
+    create a aws cloudformation template that defines a new aws IAM role for the third party monitoring solution with the account of the third party listed in the trust policy. 
+    create the IAM role across all linked AWS accounts by using stack set.
+
+3.  html form based s3 bucket. the form uses javascript to post data to an api gateway endpoint. the endpoint is integrated with aws lambda functions. the team has tested each method in api gateway
+    console and received valid responses.
+
+    which combination of steps must be completed for the form to sucessfully post to the api gateway and receive a valid response.
+
+
+answer

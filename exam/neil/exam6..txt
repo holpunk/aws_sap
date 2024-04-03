@@ -1,0 +1,75 @@
+# Aws certified Solution Architect Exam 6 
+
+### Question:  
+	Code commit to store the code. Code pipeline for integration. 
+	Pipeline has build stage which uses s3 bucket for artifacts. The company requires a new 		
+    developement pipeline for testing a new features.  
+    Pipeline should be isolated from production pipeline and incorporate continuous testing 
+    for unit tests.	 
+### Requirements: 
+	Solution architect design the solution 
+### Answer: 
+	Create a seperate pipeline in codepipeline and trigger execution using codecommit branches.
+    Use aws codebuild for running unit tests and stage the artifacts in an s3 buckets in seperate
+    testing account. 
+-------------------------------------------------------------------------------------------------------------
+    new web application.
+    fully serverless application
+    website should be for global customer
+    high responsive, minimal latency
+    highly available
+    baseline ddos protection
+    user will login into the web application using social idp like google, amazon
+### requirement:
+    design
+### solution
+    build an API with API gateway, and aws lambda, use s3 for static web resources, and create 
+    cloudfront distribution as origin with s3 bucket. use cognito to provide user management 
+    authentication function.
+----------------------------------------------------------------------------------------------------------------
+### question:
+    a company has launched a web application on amazon ec2 instances
+    instances on private subnets
+    an application load balancer is configured in front of instances
+    instances are assigned to a security group names webappSG and ALB assigned to ALB_SG
+requirement:
+    security team requires that the security groups are locked down according to best practices.
+solution:
+    An inbound rule in webappSG allowing port 80 from ALB_SG
+    an inbound rule in ALB_SG allowing port 80 from public internet
+-----------------------------------------------------------------------------------------------------------
+### question:
+    planning to migrate 30 small application to aws.
+    applications runs on mixture of node.js and python across cluster of virtual servers on-premises.
+    the company must minimize costs and standardize on single deployment methodology for all applications.
+    the applications have various usage patterns and usually low concurrent users.
+    the application use an average usage of 1 GB of memory with upto 3 GB during peak periods which can last 
+    several hours. 
+requirements:
+    most cost effective solution
+solution
+    migrate the applications to docker containers on ecs. create seperate ecs tasks and service for each 
+    application. 
+    enable auto scaling based on memory utilization and set the thrshold
+    to 75%. monitor services and hosts by cloudwatch.
+-------------------------------------------------
+### question:
+    A company is creating secure data analytics application solution. data will be uploaded into s3. 
+    data then analyzed by application running on EMR that is launched into vpc private subnet.
+    environment should be completely isolated from internet all the time.
+    data must be encrypted at rest using key controlled by company.
+requirement:
+    combination select 2
+solution
+    configure s3 bucket policy to permit access using aws:sourceVpce condition to match s3 endpoint ID.
+    configure emr cluster to use an aws CloudHSM appliance for at-rest-encryption. configure the vpc endpoint for s3.
+----------
+question:
+    security department of a large company with several aws accounts wishes to a centralize the management of identities 
+    and aws permissions. 
+    the design should also synchronize authentication credentials 
+    with the company existing on premises identity management provider.
+requirement:
+    which solution?
+solution:
+    create saml based identity management provider in central account and map IAM roles that
