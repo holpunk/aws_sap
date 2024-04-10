@@ -1,0 +1,21 @@
+Question:
+    company uses fsx for windows file server with deployment type single AZ for file storage for its non core functions
+    with the changes that mandates high availability
+    company needs to change its existing configuration
+    company also wants to monitor the system activity as well as end user actions on fsx server
+answer:
+    configure new fsx with mutli az
+    transfer data to newly created file system usign datasync service.
+    point all the users to the new location
+    you can test failover of the multi az file system by modifying its throughput capacity.
+
+    you can monitor and watch system activity using cloudwatch. and monitor user actions with access auditing using cloudwatch logs and kinesis data firehose.
+
+
+question:
+    migrating the mongo db 2 tier application from on premises to aws.
+    ec2 instances must be hosted into a private subnet with no internet access.
+    connection between application and database must be encrypted
+    database must be able to scale to meet traffic spikes from any bursty or unpredictable workloads.
+answer:
+    setup a new dynodb tables for the application with on demand mode. use gateway vpc endpoint for dynamodb so that applicaiton can have private and encrypted connection to the dynamodb tables.
