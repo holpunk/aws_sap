@@ -1,0 +1,20 @@
+AWS certified solution architect professional
+
+
+question:
+    a team is building html form that is hosted in public s3 bucket. the form uses javascript to post data to api gateway api endpoint.
+    the api endpoint is integrated with lambda functions. The team has tested each method in a api gateway console and has received valid responses.
+    which combinations of steps must the team complete so that the form can successfully post to the API endpoint and receive a valid response.
+answer:
+    enable cross origin resource sharing on api gateway
+    configure s3 bucket for web hosting.
+question:
+    A company has many aws accounts that individual business groups own. 
+        one of the accounts was recently compromised. the Attacker launched a large number of instances, and resulting in a high bill for that accounts
+        the company addressed the security breach but the solutions architect needs to develop a solution to prevent excessive spending in all accounts. 
+        each business group wants to retain full control of its aws accounts.
+        which solution should the solutions architect recommend to meet these requirements.
+answer:
+    turn on billing alerts for each aws account. create cloudwatch alarms that send an SNS notification to the account administrator whenever the account exceeds the designated spending threshold.
+question:
+      
