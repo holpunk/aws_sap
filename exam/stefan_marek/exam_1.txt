@@ -43,4 +43,11 @@ answer:
     guardduty to monitor any malicious attacks to prevent on api gateway or legacy api
 
 question:
-    
+    e commerce is investigating its user reports of java based application.
+    a developement team has recovered the logs created by the ec2 instance hosted web servers and reviewed by aurora db cluster performance metrics.
+    some of the servers are terminated before the logs collected.
+    aurora metrics are inadequete for query performance analysis.
+answer:
+    1. configure aurora mysql db cluster to publish slow query and error logs to cloudwatch logs.
+    2. setup x ray sdk to trace incoming http requests on ec2 instances as well as set up tracing sql queries qith x ray SDK for java
+    3. install and configure cloudwatch logs agent on the ec2 instances to send the application logs to cloudwatch logs.
