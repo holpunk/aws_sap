@@ -18,4 +18,29 @@ question:
     connection between application and database must be encrypted
     database must be able to scale to meet traffic spikes from any bursty or unpredictable workloads.
 answer:
-    setup a new dynodb tables for the application with on demand mode. use gateway vpc endpoint for dynamodb so that applicaiton can have private and encrypted connection to the dynamodb tables.
+    setup a new dynodb tables for the application with on demand mode. 
+    use gateway vpc endpoint for dynamodb so that applicaiton can have private and encrypted connection to the dynamodb tables.
+
+question:
+    company provides a web based business management platform for IT service companies across the globe to manage help desk.
+    50K uses the platform.
+    company has issues with having not enough visibility into its systems to discover any issues.
+    multiple logs  and monitoring systems are needed to understand root cause of problems.
+    company is slowly moving towards api gateway/container services.
+    company wants to monitor the microservices and gain deeper insights into serverless architecture.
+answer:
+    x ray to analyze the microservices applications through request tracing.
+    configure cloudwatch for monitoring containers, latency, web server requests and incoming load balancer requests and create cloudwatch alarms to send out notifications
+    if system latency is increasing
+
+question:
+    retail company offers its services through api gateway and lambda functions.
+    legacy api hosted on ec2.
+    security team and audit team has raised concern about not to use legacy api.
+    ddos attacks and malicious exploits.
+answer:
+    install WAF as first line of defense in the attacks
+    guardduty to monitor any malicious attacks to prevent on api gateway or legacy api
+
+question:
+    
