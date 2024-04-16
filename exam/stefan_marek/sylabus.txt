@@ -1,0 +1,67 @@
+1. vpc 
+    basics
+    peering
+    transit gateway
+    vpc endpoint
+    vpc endpoint policies
+    AWS privatelink
+    AWS s2s vpn
+    client vpn
+    AWS direct connect
+    on premises redundant
+    vpc flow logs
+    network firewall
+
+2. Machine Learning
+    AWS rekognition
+    AWS transcribe
+    AWS polly
+    AWS translate
+    AWS lex-connect
+    AWS comprehend
+    AWS comprehend medical
+    AWS sagemaker
+    AWS forecast
+    AWS kendra
+    AWS personalize
+    AWS textract
+
+3. IAM
+    AWS IAM
+    IAM access analyzer
+    AWS STS
+    identity federation and cognito
+    directory services
+    AWS organizations
+    organization policies
+    IAM identity center
+    AWS Control tower
+    AWS resource access manager
+
+4. security
+    AWS cloudtrail
+    AWS cloudtrail eventbridge integration
+    AWS KMS
+    AWS parameter store
+    AWS secrets manager
+    AWS RDS security
+    AWS SSL encryption, SNI & MITM
+    AWS certificate manager
+    AWS cloudhsm
+    S3 security
+    S3 access points
+    S3 multi region access points
+    S3 object lambda
+    DDoS & AWS shield
+    AWS WAF
+    AWS firewall manager
+    Blocking an IP address
+    Amazon inspector
+    AWS Config
+    AWS managed Logs
+    AWS GuardDuty
+    IAM advanced Policies
+    Ec2 instance connect
+    AWS security Hub
+
+5. 
