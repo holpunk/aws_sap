@@ -5,7 +5,7 @@ Access analyzer
     iam roles
     kms keys
     lambda function and layers
-    sqs queues
+    SQS queues
     secreats manager
 
     define zone of trust. aws account or organization
